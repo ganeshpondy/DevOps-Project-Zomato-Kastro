@@ -59,10 +59,10 @@ pipeline {
         stage ("Tag & Push to DockerHub") {
             steps {
                 script {
-                    withCredentials([usernamePassword(credentialsId: 'docker', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
+                    // withCredentials([usernamePassword(credentialsId: 'docker', usernameVariable: 'DOCKER_USER', passwordVariable: 'DOCKER_PASS')]) {
                         // sh 'echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin'
-                        sh 'docker login -u ${DOCKER_USER} -p ${DOCKER_PASSWORD}'
-                    // withDockerRegistry(credentialsId: 'docker') {
+                        // sh 'docker login -u ${DOCKER_USER} -p ${DOCKER_PASSWORD}'
+                    withDockerRegistry(credentialsId: 'docker') {
                         sh "docker tag zomato ganeshpondy/zomato:latest "
                         sh "docker push ganeshpondy/zomato:latest "
                     // }
