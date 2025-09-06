@@ -3,8 +3,13 @@ Deployment of ZOMATO Project
 --------------------------------------------
 Repo URL: https://github.com/KastroVKiran/DevOps-Project-Zomato-Kastro.git
 
-
 1. Launch an Instance (Ubuntu, 24.04, t2.large, 30 GB)
+	SSM Agent installation steps :
+sh '#!/bin/bash
+sudo apt update
+sudo apt install snapd
+sudo systemctl enable amazon-ssm-agent
+sudo systemctl start amazon-ssm-agent'
 
 2. Connect to the instance
 
@@ -31,6 +36,7 @@ curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee /
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/ | sudo tee /etc/apt/sources.list.d/jenkins.list > /dev/null
 sudo apt-get update -y
 sudo apt-get install jenkins -y
+sudo systemctl enable jenkins
 sudo systemctl start jenkins
 sudo systemctl status jenkins
 
@@ -58,6 +64,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo usermod -aG docker ubuntu
 sudo chmod 777 /var/run/docker.sock
 newgrp docker
+sudo systemctl enable docker
 sudo systemctl status docker
 
 Verifiy Docker installation: docker --version
@@ -713,4 +720,5 @@ Kind Request:
 Once after you have successfully deployed the App, kindly share your experience on LinkedIn by Tagging me and also provide the YouTube link of this project in your post, as it helps others to access the video quickly. 
 ========================================================================================================
 												HAPPY LEARNING
+
 
