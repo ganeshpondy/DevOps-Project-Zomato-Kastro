@@ -28,9 +28,9 @@ pipeline {
         }
         stage("Code Quality Gate"){
            steps {
-                script {
-                    // waitForQualityGate abortPipeline: false, credentialsId: 'Sonar-token' 
-                }
+                // script {
+                //     waitForQualityGate abortPipeline: false, credentialsId: 'Sonar-token' 
+                // }
             } 
         }
         stage("Install NPM Dependencies") {
