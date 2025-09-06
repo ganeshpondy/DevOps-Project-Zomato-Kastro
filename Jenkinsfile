@@ -28,6 +28,7 @@ pipeline {
         }
         stage("Code Quality Gate"){
            steps {
+               sh 'echo "Code Quality Gate"'
                 // script {
                 //     waitForQualityGate abortPipeline: false, credentialsId: 'Sonar-token' 
                 // }
