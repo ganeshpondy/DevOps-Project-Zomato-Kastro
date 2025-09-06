@@ -47,22 +47,5 @@ In this **DevOps project**, I demonstrate how to **deploy a ZOMATO Clone App** u
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=flat-square&logo=nexus&logoColor=white)](https://youtu.be/opJAfDOCZuI)
 
 ---
-
-## Connect with me on LinkedIn:  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kastro-kiran/)
-
-## Join the WhatsApp Group for DevOps technical discussions!
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/EGw6ZlwUHZc82cA0vXFnwm) 
-
----
-
-### Feedback Request:  
-
-After deploying the app, please share your opinion on LinkedIn along with the Project link and tag me on LinkedIn. Help the video reach wider DevOps enthusiasts.
-
----
-
 ## Happy learning!  
-<img src="https://media.licdn.com/dms/image/v2/D5603AQHJB_lF1d9OSw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718971147172?e=1735776000&v=beta&t=HC_e0eOufPvf8XQ0P7iI9GDm9hBSIh5FwQaGsL_8ivo" alt="Kastro Profile Image" width="100" height="100" style="border-radius:50%;">
 
-KASTRO KIRAN V
