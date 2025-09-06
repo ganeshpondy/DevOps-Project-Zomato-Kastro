@@ -63,8 +63,8 @@ pipeline {
                         // sh 'echo "$DOCKER_PASS" | docker login -u "$DOCKER_USER" --password-stdin'
                         sh 'docker login -u ${DOCKER_USER} -p ${DOCKER_PASSWORD}'
                     // withDockerRegistry(credentialsId: 'docker') {
-                        sh "docker tag zomato balavg/zomato:latest "
-                        sh "docker push balavg/zomato:latest "
+                        sh "docker tag zomato ganeshpondy/zomato:latest "
+                        sh "docker push ganeshpondy/zomato:latest "
                     // }
                 }
                 }
@@ -74,16 +74,16 @@ pipeline {
             steps {
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){
-                       sh 'docker-scout quickview balavg/zomato:latest'
-                       sh 'docker-scout cves balavg/zomato:latest'
-                       sh 'docker-scout recommendations balavg/zomato:latest'
+                       sh 'docker-scout quickview ganeshpondy/zomato:latest'
+                       sh 'docker-scout cves ganeshpondy/zomato:latest'
+                       sh 'docker-scout recommendations ganeshpondy/zomato:latest'
                    }
                 }
             }
         }
         stage ("Deploy to Container") {
             steps {
-                sh 'docker run -d --name zomato -p 3000:3000 balavg/zomato:latest'
+                sh 'docker run -d --name zomato -p 3000:3000 ganeshpondy/zomato:latest'
             }
         }
     }
