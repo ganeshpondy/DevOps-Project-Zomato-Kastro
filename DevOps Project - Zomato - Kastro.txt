@@ -131,13 +131,42 @@ Lets create another credentials for DockerHub. This is being done because, as so
 11.3 Configuration of Email notification in Jenkins
 Account -> Search with 'App passwords' -> Create new passcode
 As soon as the build happens, i need to get an email notification to do that we have to configure our email.
+add in credentials (Remove Space) as => email-creds
 <Follow the process as explained in the video>
 
 
 12. System Configuration in Jenkins
+a.
+Manage Jenkins -> System -> SonarQube installations
+name: sonar-server
+path: http://<public-ip>:9000
+Server authentication token => sonar-token
 <Follow the process as explained in the video>
 
+b.
+Extended E-mail Notification
+SMTP Server: smtp.gmail.com
+SMTP Port: 465
+Advanced => Credentials => email-creds
+Select check box => Use SSL
+				 => Use OAuth 2.0
+
+c.
+E-mail Notification
+SMTP server : smtp.gmail.com
+Advanced: Use SMTP Authentication
+		  User Name: ganeshpondy@gmail.com
+		 password: generated passcode from gmail (Remove Space)
+		 use SSL
+		SMTP Port : 465
+		Reply-To Address : ganeshpondy@gmail.com
+
+d. Manage Jenkins -> System -> default trigger => select `always'
+
 13. Create webhook in SonarQube
+
+
+
 <Follow the process as explained in the video>
 
 14. Create Pipeline Job
@@ -744,6 +773,7 @@ Kind Request:
 Once after you have successfully deployed the App, kindly share your experience on LinkedIn by Tagging me and also provide the YouTube link of this project in your post, as it helps others to access the video quickly. 
 ========================================================================================================
 												HAPPY LEARNING
+
 
 
 
