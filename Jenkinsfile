@@ -6,6 +6,7 @@ pipeline {
     }
     environment {
         SCANNER_HOME=tool 'sonar-server'
+        GITHUB_CREDENTIALS = credentials('docker')
     }
     stages {
         stage ("clean workspace") {
