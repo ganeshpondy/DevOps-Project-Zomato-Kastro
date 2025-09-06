@@ -163,11 +163,12 @@ Advanced: Use SMTP Authentication
 
 d. Manage Jenkins -> System -> default trigger => select `always'
 
+
 13. Create webhook in SonarQube
-
-
-
-<Follow the process as explained in the video>
+SonarQube => Administration => Configuration => Webhooks => create
+Name => jenkins
+URL  => http://<public-ip>:8080/sonarqube-webhook/
+click => create
 
 14. Create Pipeline Job
 Before pasting the pipeline script, do the following changes in the script
@@ -773,6 +774,7 @@ Kind Request:
 Once after you have successfully deployed the App, kindly share your experience on LinkedIn by Tagging me and also provide the YouTube link of this project in your post, as it helps others to access the video quickly. 
 ========================================================================================================
 												HAPPY LEARNING
+
 
 
 
