@@ -95,7 +95,19 @@ $ docker ps (You can see SonarQube container)
 
 10. Installation of Plugins in Jenkins
 Install below plugins:
-<Follow the process as explained in the video>
+Eclipse Temurin Installer, 
+SonarQube Scanner, 
+NodeJS, 
+OWASP Dependency-Check 5.5.1, 
+Docker 1.6.2, 
+Docker Commons, 
+Docker Pipeline,
+Docker API, 
+docker-build-step, 
+Pipeline: Stage View, 
+Prometheus metrics, 
+Email Extension Template --- > install --- > You will see error while
+installing Prometheus plugin. 
 
 11. SonarQube configuration in Jenkins
 <Follow the process as explained in the video>
@@ -724,6 +736,7 @@ Kind Request:
 Once after you have successfully deployed the App, kindly share your experience on LinkedIn by Tagging me and also provide the YouTube link of this project in your post, as it helps others to access the video quickly. 
 ========================================================================================================
 												HAPPY LEARNING
+
 
 
 
